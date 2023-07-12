@@ -1,0 +1,18 @@
+﻿@model RandomNumberDemo1.Models.RandomNumberViewModel
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="w-50">
+
+    <form asp-action="Index" asp-controller="Home">
+        <div class="input-group">
+            <input class="form-control" asp-for="RandomNumber" />
+            <button class="btn btn-primary" type="submit">Generate</button>
+        </div>
+    </form>
+
+    
+</div>
